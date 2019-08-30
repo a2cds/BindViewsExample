@@ -1,10 +1,8 @@
-﻿
+﻿@model BindViewsExample.Models.Restaurant
 @{
     Layout = null;
 }
-
 <!DOCTYPE html>
-
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
@@ -12,5 +10,10 @@
     <link rel="stylesheet" type="text/css" href="~/css/style-sheet.css" />
 </head>
 <body>
+    <h1>Informações do Restaurante:</h1>
+    <div>
+        @Html.EditorForModel()
+    </div>
+    <p id="remark">Segunda exibição do restaurante</p>
 </body>
 </html>
