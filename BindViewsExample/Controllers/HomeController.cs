@@ -21,7 +21,7 @@ namespace BindViewsExample.Controllers
                 Open = true,
                 Speciality = "Frango Frito"
             };
-            return View();
+            return View(restaurant);
         }
 
         [Route("Home/Display")]
@@ -36,7 +36,7 @@ namespace BindViewsExample.Controllers
                 Open = true,
                 Speciality = "Frango Grelhado"
             };
-            return View();
+            return View(restaurant);
         }
     }
 }
